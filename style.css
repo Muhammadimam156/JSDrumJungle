@@ -1,0 +1,47 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .drums {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 600px;
+    }
+
+    .key {
+      width: 100px;
+      height: 100px;
+      background: #444;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      cursor: pointer;
+      transition: all 0.07s;
+    }
+
+    .key kbd {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .key .sound {
+      font-size: 12px;
+      color: #ffcc00;
+    }
+
+    .playing {
+      transform: scale(1.1);
+      border: 2px solid #ffcc00;
+      box-shadow: 0 0 10px #ffcc00;
+    }
